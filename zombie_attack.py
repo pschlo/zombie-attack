@@ -122,7 +122,7 @@ class Zombie(pygame.sprite.Sprite):
         # self.rect.width /= 2
         # pygame.draw.rect(self.image, pygame.Color('red'), self.rect, 1)
         self.rect.x = random.randint(0, self.game.width)
-        self.rect.y = random.randint(-self.game.height * (1 / 10), 0)
+        self.rect.y = random.randint(int(-self.game.height * (1 / 10)), 0)
         self.radius = 1
 
     def update(self):
